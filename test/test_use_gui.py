@@ -3,7 +3,7 @@
 import numpy as np
 from mock_dir import MockDir
 import tifffile
-#from saenopy.gui_master import MainWindow
+from saenopy.gui_master import MainWindow
 from qtpy import QtWidgets
 import sys
 np.random.seed(1234)
