@@ -8,5 +8,19 @@ qtpy
 qtawesome
 scikit-image
 
-
+pandas
+numba
 nptyping
+scipy
+tqdm
+qimage2ndarray
+natsort
+pyvista
+pyvistaqt
+imagecodecs
+openpiv
+qtawesome
+jointforces
+appdirs
+qtrangeslider
+h5py
