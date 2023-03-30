@@ -1,0 +1,94 @@
+{
+  "image": {
+    "width": 1024,
+    "height": 768
+  },
+  "camera": {
+    "elevation": 0.0,
+    "azimuth": 0.0
+  },
+  "theme": "dark",
+  "show_grid": true,
+  "use_nans": false,
+  "arrows": "piv",
+  "deformation_arrows": {
+    "autoscale": true,
+    "scale_max": 10.0,
+    "colormap": "turbo",
+    "arrow_scale": 1.0
+  },
+  "force_arrows": {
+    "autoscale": true,
+    "scale_max": 1000.0,
+    "use_center": false,
+    "colormap": "turbo",
+    "arrow_scale": 1.0
+  },
+  "stack": {
+    "image": true,
+    "channel": "00",
+    "z_proj": false,
+    "contrast_enhance": false,
+    "colormap": "gray",
+    "z": 188
+  },
+  "crop": {
+    "x": [
+      156,
+      356
+    ],
+    "y": [
+      156,
+      356
+    ],
+    "z": [
+      163,
+      213
+    ]
+  },
+  "channel0": {
+    "show": false,
+    "sigma_sato": 2,
+    "sigma_gauss": 0,
+    "percentiles": [
+      0,
+      1
+    ],
+    "range": [
+      0,
+      1
+    ],
+    "alpha": [
+      0.1,
+      0.5,
+      1
+    ],
+    "cmap": "pink"
+  },
+  "channel1": {
+    "show": false,
+    "sigma_sato": 0,
+    "sigma_gauss": 7,
+    "percentiles": [
+      0,
+      1
+    ],
+    "range": [
+      0,
+      1
+    ],
+    "alpha": [
+      0.1,
+      0.5,
+      1
+    ],
+    "cmap": "Greens"
+  },
+  "channel_thresh": 1.0,
+  "time": {
+    "t": 0,
+    "format": "%d:%H:%M",
+    "display": true,
+    "fontsize": 18
+  }
+}

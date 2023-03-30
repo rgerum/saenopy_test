@@ -1,0 +1,126 @@
+{
+  "image": {
+    "width": 1024,
+    "height": 768,
+    "logo_size": 200,
+    "scale": 1.0,
+    "antialiase": true
+  },
+  "camera": {
+    "elevation": 35.0,
+    "azimuth": 45.0,
+    "distance": 1223,
+    "offset_x": 0,
+    "offset_y": 0,
+    "roll": 0
+  },
+  "theme": "dark",
+  "show_grid": true,
+  "use_nans": false,
+  "arrows": "piv",
+  "averaging_size": 10.0,
+  "deformation_arrows": {
+    "autoscale": true,
+    "scale_max": 10.0,
+    "colormap": "turbo",
+    "arrow_scale": 1.0,
+    "arrow_opacity": 1.0,
+    "skip": 1
+  },
+  "force_arrows": {
+    "autoscale": true,
+    "scale_max": 1000.0,
+    "use_center": false,
+    "colormap": "turbo",
+    "arrow_scale": 1.0,
+    "arrow_opacity": 1.0,
+    "skip": 1
+  },
+  "stack": {
+    "image": true,
+    "channel": "00",
+    "z_proj": false,
+    "use_contrast_enhance": false,
+    "contrast_enhance": null,
+    "colormap": "gray",
+    "z": 125,
+    "use_reference_stack": false,
+    "channel_B": "",
+    "colormap_B": "gray"
+  },
+  "scalebar": {
+    "length": 0.0,
+    "width": 5.0,
+    "xpos": 15.0,
+    "ypos": 10.0,
+    "fontsize": 18.0
+  },
+  "2D_arrows": {
+    "width": 2.0,
+    "headlength": 5.0,
+    "headheight": 5.0
+  },
+  "crop": {
+    "x": [
+      156,
+      356
+    ],
+    "y": [
+      156,
+      356
+    ],
+    "z": [
+      163,
+      213
+    ]
+  },
+  "channel0": {
+    "show": false,
+    "skip": 1,
+    "sigma_sato": 2,
+    "sigma_gauss": 0,
+    "percentiles": [
+      0,
+      1
+    ],
+    "range": [
+      0,
+      1
+    ],
+    "alpha": [
+      0.1,
+      0.5,
+      1
+    ],
+    "cmap": "pink"
+  },
+  "channel1": {
+    "show": false,
+    "skip": 1,
+    "sigma_sato": 0,
+    "sigma_gauss": 7,
+    "percentiles": [
+      0,
+      1
+    ],
+    "range": [
+      0,
+      1
+    ],
+    "alpha": [
+      0.1,
+      0.5,
+      1
+    ],
+    "cmap": "Greens",
+    "channel": 2
+  },
+  "channel_thresh": 1.0,
+  "time": {
+    "t": 0,
+    "format": "%d:%H:%M",
+    "start": 0.0,
+    "display": true,
+    "fontsize": 18
+  }
+}
