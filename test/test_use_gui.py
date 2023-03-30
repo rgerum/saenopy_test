@@ -8,6 +8,18 @@ from qtpy import QtWidgets
 import sys
 np.random.seed(1234)
 
+import sys
+from qtpy import QtCore, QtWidgets, QtGui
+from pathlib import Path
+import multiprocessing
+
+from skimage.filters import ridges, thresholding
+from saenopy.gui import QtShortCuts
+from saenopy.gui_deformation_whole2 import MainWindow as SolverMain
+from saenopy.gui_deformation_spheriod import MainWindow as SpheriodMain
+from saenopy.gui_orientation import MainWindow as OrientationMain
+from saenopy.gui.resources import resource_path, resource_icon
+
 
 def create_tif(filename, y=20, x=10, z=1, rgb=None):
     with tifffile.TiffWriter(filename) as tif:
