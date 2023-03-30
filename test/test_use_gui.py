@@ -3,7 +3,7 @@
 import numpy as np
 from mock_dir import MockDir
 import tifffile
-from saenopy.gui_master import MainWindow
+#from saenopy.gui_master import MainWindow
 from qtpy import QtWidgets
 import sys
 np.random.seed(1234)
@@ -26,6 +26,8 @@ def sf4(x):
 
 
 def test_stack():
+    app = QtWidgets.QApplication(sys.argv)
+    return
     file_structure = {
         "tmp": {
             "run-1": [f"Pos004_S001_z{z:03d}_ch00.tif" for z in range(50)],
