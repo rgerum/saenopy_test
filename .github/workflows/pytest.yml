@@ -29,4 +29,4 @@ jobs:
       env:
         QT_QPA_PLATFORM: "offscreen"
       run: |
-        pytest
+        poetry run pytest
