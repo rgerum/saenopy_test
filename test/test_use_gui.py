@@ -42,13 +42,8 @@ def test_stack():
     window = MainWindow()
 
     import pyvista as pv
-    cyl = pv.Cylinder()
-
-    p = pv.Plotter(shape=(3, 3), off_screen=True)
-    # Top row
-    p.subplot(0, 0)
-    p.add_mesh(cyl, color="tan", show_edges=True)
-    # Render all of them
+    p = pv.Plotter(off_screen=True)
+    p.add_mesh(pv.Cylinder(), color="tan", show_edges=True)
     p.show(screenshot="test.png")
 
     from pyvistaqt import QtInteractor
