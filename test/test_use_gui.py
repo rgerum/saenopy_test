@@ -93,3 +93,7 @@ def test_stack():
         print(M.U[M.reg_mask])
         print(results[0].solver[0].U.shape)
         assert sf4(M.U[M.reg_mask][0]) == sf4([-2.01259036e-38, -1.96865342e-38, -4.92921492e-38])
+
+
+if __name__ == "__main__":
+    test_stack()
