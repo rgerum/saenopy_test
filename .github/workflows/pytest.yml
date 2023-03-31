@@ -29,5 +29,4 @@ jobs:
         python-version: '3.9'
         cache: 'poetry'
     - run: poetry install --with dev
-    - run: poetry run python test/test_use_gui.py
     - run: poetry run python -m pytest test/test_use_gui.py
