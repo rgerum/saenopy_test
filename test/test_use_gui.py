@@ -40,6 +40,8 @@ def sf4(x):
 def test_stack():
     app = QtWidgets.QApplication(sys.argv)
     window = MainWindow()
+    from pyvistaqt import QtInteractor
+    QtInteractor(window, auto_update=False)
     window.changedTab(1)
     #return
     file_structure = {
