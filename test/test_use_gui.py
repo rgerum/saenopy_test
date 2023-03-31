@@ -51,7 +51,7 @@ def test_stack():
     QtInteractor(window, auto_update=False)
     print("he")
     window.changedTab(1)
-    return
+
     file_structure = {
         "tmp": {
             "run-1": [f"Pos004_S001_z{z:03d}_ch00.tif" for z in range(50)],
