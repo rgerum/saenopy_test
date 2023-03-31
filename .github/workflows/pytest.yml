@@ -28,6 +28,7 @@ jobs:
     - run : xvfb-run poetry run python -c 'import pyvista as pv; p = pv.Plotter(off_screen=True); p.add_mesh(pv.Cylinder(), color="tan", show_edges=True); p.show(screenshot="test.png")'
       env:
         QT_QPA_PLATFORM: "offscreen"
+    - run: xvfb-run poetry run python test/test_use_gui.py
     - name: Test
       run: |
         xvfb-run poetry run pytest
