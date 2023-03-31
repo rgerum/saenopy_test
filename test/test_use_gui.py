@@ -40,6 +40,20 @@ def sf4(x):
 def test_stack():
     app = QtWidgets.QApplication(sys.argv)
     window = MainWindow()
+
+    import pyvista as pv
+    cyl = pv.Cylinder()
+
+    p = pv.Plotter(shape=(3, 3))
+    # Top row
+    p.subplot(0, 0)
+    p.add_mesh(cyl, color="tan", show_edges=True)
+    # Render all of them
+    #p.show()
+    import matplotlib.pyplot as plt
+    plt.imshow(p.image)
+    plt.savefig("test.png")
+
     from pyvistaqt import QtInteractor
     QtInteractor(window, auto_update=False)
     window.changedTab(1)
