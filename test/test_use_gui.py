@@ -38,18 +38,20 @@ def sf4(x):
 
 
 def test_stack():
+    print("hi")
     app = QtWidgets.QApplication(sys.argv)
     window = MainWindow()
-
+    print("ho")
     import pyvista as pv
     p = pv.Plotter(off_screen=True)
     p.add_mesh(pv.Cylinder(), color="tan", show_edges=True)
     p.show(screenshot="test.png")
-
+    print("hu")
     from pyvistaqt import QtInteractor
     QtInteractor(window, auto_update=False)
+    print("he")
     window.changedTab(1)
-    #return
+    return
     file_structure = {
         "tmp": {
             "run-1": [f"Pos004_S001_z{z:03d}_ch00.tif" for z in range(50)],
